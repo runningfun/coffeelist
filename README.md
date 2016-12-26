@@ -10,6 +10,8 @@ This README would normally document whatever steps are necessary to get your app
 
 ### How do I get set up? ###
 
+1. to run: mvn clean install && java -jar target/coffeelistservice-swarm.jar
+
 * Summary of set up
 * Configuration
 * Dependencies
