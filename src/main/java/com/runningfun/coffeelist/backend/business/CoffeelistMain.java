@@ -1,6 +1,7 @@
 package com.runningfun.coffeelist.backend.business;
 
 import com.runningfun.coffeelist.backend.rest.RestApplication;
+import com.runningfun.coffeelist.backend.rest.dto.CoffeeGroup;
 import org.jboss.shrinkwrap.api.ShrinkWrap;
 import org.wildfly.swarm.Swarm;
 import org.wildfly.swarm.jaxrs.JAXRSArchive;
@@ -21,8 +22,9 @@ public class CoffeelistMain {
                 .withRole( "testrole" );
         deployment.addPackage(CoffeelistMain.class.getPackage());
         deployment.addPackage(RestApplication.class.getPackage());
+        deployment.addPackage(CoffeeGroup.class.getPackage());
 //        deployment.addResource(org.apache.deltaspike.core.api.provider.BeanProvider.class); //-> not sufficient
-        deployment.staticContent();
+        deployment.addAllDependencies();
         System.out.println("### Start swarm");
         swarm.start();
         swarm.deploy(deployment);

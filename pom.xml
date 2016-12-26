@@ -58,20 +58,20 @@
 
     <dependencies>
         <!-- Java EE 7 dependency -->
-        <dependency>
-            <groupId>javax</groupId>
-            <artifactId>javaee-api</artifactId>
-            <version>7.0</version>
-            <scope>provided</scope>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>javax</groupId>-->
+            <!--<artifactId>javaee-api</artifactId>-->
+            <!--<version>7.0</version>-->
+            <!--<scope>provided</scope>-->
+        <!--</dependency>-->
         <!-- WildFly Swarm Fractions -->
         <dependency>
             <groupId>org.wildfly.swarm</groupId>
             <artifactId>jaxrs-validator</artifactId>
         </dependency><dependency>
-        <groupId>org.wildfly.swarm</groupId>
-        <artifactId>jaxrs-jaxb</artifactId>
-    </dependency>
+            <groupId>org.wildfly.swarm</groupId>
+            <artifactId>jaxrs-jaxb</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.wildfly.swarm</groupId>
             <artifactId>jaxrs</artifactId>
@@ -83,13 +83,19 @@
         <dependency>
             <groupId>org.wildfly.swarm</groupId>
             <artifactId>cdi</artifactId>
-        </dependency><dependency>
-        <groupId>org.wildfly.swarm</groupId>
-        <artifactId>bean-validation</artifactId>
-    </dependency><dependency>
-        <groupId>org.wildfly.swarm</groupId>
-        <artifactId>jaxrs-cdi</artifactId>
-    </dependency>
+        </dependency>
+        <dependency>
+            <groupId>org.wildfly.swarm</groupId>
+            <artifactId>bean-validation</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.wildfly.swarm</groupId>
+            <artifactId>jaxrs-cdi</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.wildfly.swarm</groupId>
+            <artifactId>keycloak</artifactId>
+        </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
         <dependency>
@@ -117,9 +123,18 @@
             <version>3.0.19.Final</version>
         </dependency>
 
+
+
+        <!-- junit -->
         <dependency>
-            <groupId>org.wildfly.swarm</groupId>
-            <artifactId>keycloak</artifactId>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
+        <dependency>
+            <groupId>io.swagger</groupId>
+            <artifactId>swagger-jaxrs</artifactId>
+            <version>1.5.10</version>
         </dependency>
 
     </dependencies>

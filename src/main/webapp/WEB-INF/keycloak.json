@@ -1,0 +1,7 @@
+{
+  "realm": "iot",
+  "auth-server-url": "https://stefan-herschbach.de:28443/auth",
+  "ssl-required": "external",
+  "resource": "testpublicclient",
+  "public-client": true
+}
